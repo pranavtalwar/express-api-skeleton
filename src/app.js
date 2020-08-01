@@ -10,7 +10,7 @@ app.use(helmet())
 app.use(morgan('tiny'))
 
 app.get('/', (req, res) => {
-    res.status(200).send('simple endpoint')
+    res.status(200).json({ data: 'simple endpoint' })
 })
 
 module.exports = app
